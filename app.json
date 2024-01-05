@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "slug": "react-native-boilerplate",
+    "name": "alphaclueapp",
+    "slug": "alphaclueapp",
     "privacy": "unlisted",
     "version": "1.0.0",
     "platforms": ["ios", "android", "web"],
@@ -28,11 +28,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
+        "projectId": "69cde276-254d-4a4b-bbbc-6e6622631b42"
       }
     },
     "updates": {
-      "url": "https://u.expo.dev/18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
+      "url": "https://u.expo.dev/69cde276-254d-4a4b-bbbc-6e6622631b42"
     },
     "runtimeVersion": {
       "policy": "sdkVersion"

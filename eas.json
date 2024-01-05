@@ -1,61 +1,25 @@
 {
   "cli": {
-    "version": ">= 3.5.2",
-    "requireCommit": false
+    "version": ">= 3.13.3"
   },
   "build": {
-    "base": {
-      "node": "16.20.1",
-      "env": {
-        "APP_ENV": "production"
-      },
-      "ios": {
-        "image": "latest",
-        "resourceClass": "m1-medium",
-        "env": {
-          "PLATFORM": "ios"
-        }
-      },
+    "preview": {
       "android": {
-        "image": "default",
-        "env": {
-          "PLATFORM": "android"
-        }
+        "buildType": "apk"
       },
-      "channel": "base"
-    },
-    "development": {
-      "extends": "base",
-      "channel": "development",
       "distribution": "internal",
-      "env": {
-        "APP_ENV": "dev"
-      },
+      "channel": "preview"
+    },
+    "preview2": {
       "android": {
-        "gradleCommand": ":app:assembleDebug"
-      },
-      "ios": {
-        "simulator": true,
-        "buildConfiguration": "Debug"
+        "gradleCommand": ":app:assembleRelease"
       }
     },
-    "staging": {
-      "extends": "base",
-      "channel": "staging",
-      "distribution": "internal",
-      "env": {
-        "APP_ENV": "stg"
-      },
-      "ios": {
-        "enterpriseProvisioning": "universal"
-      }
+    "preview3": {
+      "developmentClient": true
     },
     "production": {
-      "extends": "base",
-      "channel": "production",
-      "env": {
-        "APP_ENV": "prod"
-      }
+      "channel": "production"
     }
   },
   "submit": {
